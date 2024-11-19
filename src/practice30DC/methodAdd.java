@@ -1,5 +1,7 @@
+package practice30DC;
+
 public class methodAdd {
-    static  String greet() {
+    static String greet() {
         String greetings = "Good Evening";
         return greetings;
     }

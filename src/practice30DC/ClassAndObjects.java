@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+package practice30DC;
 
 class Main2 {
     int x = 10;

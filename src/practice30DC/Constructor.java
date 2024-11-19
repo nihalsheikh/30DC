@@ -1,8 +1,13 @@
+package practice30DC;
+
 public class Constructor {
     String greet;
     String name;
 
-    // Constructor for myConst
+    // practice30DC.Constructor for myConst
+    /*
+    Following line is a Constructor, syntax: <accessModifier> className () {}
+    */
     public Constructor(String greetings) {
         greet = greetings;
     }

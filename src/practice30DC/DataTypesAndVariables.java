@@ -1,3 +1,5 @@
+package practice30DC;
+
 public class DataTypesAndVariables {
     public static void main(String[] args) {
         // Variables : where values can be stored.

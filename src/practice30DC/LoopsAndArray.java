@@ -1,3 +1,5 @@
+package practice30DC;
+
 import java.util.Scanner;
 
 public class LoopsAndArray {

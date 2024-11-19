@@ -1,5 +1,7 @@
+package practice30DC;
+
 public class Methods {
-    // Methods
+    // practice30DC.Methods
     static String method1(String firstName, String lastName){
         String fullName = firstName + " " + lastName;
         return fullName;
@@ -32,7 +34,7 @@ public class Methods {
         System.out.println("Sum is: "+addition);
 
         // Method Overloading
-        // Methods with same name but different parameters
+        // practice30DC.Methods with same name but different parameters
 
         // return sum of int
         int intSum = meth1(5, 5);
