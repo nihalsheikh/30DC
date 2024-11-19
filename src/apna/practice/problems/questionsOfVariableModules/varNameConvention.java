@@ -6,5 +6,6 @@ public class varNameConvention {
         int $ = 10;
 
         System.out.println($);
+        // YES: $ is a valid Variable Name
     }
 }
