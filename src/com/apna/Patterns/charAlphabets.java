@@ -1,4 +1,4 @@
-package com.apna.patterns;
+package com.apna.Patterns;
 
 import java.util.Scanner;
 

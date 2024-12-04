@@ -1,6 +1,5 @@
-package com.apna.patterns;
+package com.apna.Patterns;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class rightTriangle {
