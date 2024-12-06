@@ -1,7 +1,7 @@
 package com.apna.AdvancePatterns;
 import java.util.Scanner;
 
-public class InvertedPyramid {
+public class InvertedHalfPyramid {
     // Right-sided pyramid
     public static void InvPyramid(int n) {
         // we will need 3 loops to print inverted pyramid
