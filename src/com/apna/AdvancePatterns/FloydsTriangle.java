@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class FloydsTriangle {
     public static void Triangle(int n) {
-        int count = 0; // this variable make counts the rows in order
+        int count = 1; // this variable make counts the rows in order
         for(int i=1; i<=n; i++) { // loops for the number of rows
             for(int j=1; j<=i; j++) { // Loop to print nums in increasing order
-                System.out.print(count + 1 + " "); // add num to count var
+                System.out.print(count + " "); // add num to count var
                 count++; //increment count var
             }
             System.out.println();
