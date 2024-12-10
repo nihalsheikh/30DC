@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class BinaryTriangle {
     public static void Triangle(int n) {
-        int binary = 0;
-        for(int i=0; i<n; i++) {
-            for(int j=0; j<=i; j++) {
-                System.out.print(binary +1 + " ");
-                binary = 0;
+        for(int i=1; i<=n; i++) { // as usual loop for row lines
+            for(int j=1; j<=i; j++) { // loop for column lines
+                // condition to check if the (i,j) co-ordinates are even or odd
+                // and then print the num you want
+                if((i+j)%2==0) {
+                    System.out.print("1"+ " ");
+                }
+                else {
+                    System.out.print("0" + " ");
+                }
             }
-            System.out.println();
+            System.out.println(); // going to next line after finishing a line1
         }
     }
 
