@@ -1,7 +1,8 @@
 package com.apna.Arrays;
 
 public class ArrayUpdation {
-    public static void Update(int[] marks) {
+    // Passing array as arguments
+    public static void Update(int[] marks) { // int[] marks arguments
         for(int i=0; i<marks.length; i++) {
             marks[i] = marks[i]+1;
         }
