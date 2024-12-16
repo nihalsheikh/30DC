@@ -16,6 +16,6 @@ public class LargestNum {
         int[] arr = {1,3,63,5,7,9,11,70,12,16,50};
 
         int bigNum = Largest(arr); // strong the return value in bigNum variable
-        System.out.println("Largest num in Array is: " + bigNum);
+        System.out.println("Largest num is: " + bigNum);
     }
 }
