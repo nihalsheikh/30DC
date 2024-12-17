@@ -29,13 +29,13 @@ public class BinarySearch {
         int[] arr = {2,4,6,8,10,12,14};
         int key = 14;
 
-        int BinSearch = Binary(arr, key);
+        int BinSearch = Binary(arr, key); // storing index in a var
 
         if(BinSearch == -1) {
             System.out.println("Element not found");
         }
         else {
-            System.out.println("Key "+key+" is ar index: "+BinSearch);
+            System.out.println("Key "+key+" is at index: "+BinSearch);
         }
     }
 }
