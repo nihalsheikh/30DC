@@ -31,6 +31,5 @@ public class ArrayPairs {
 
         System.out.println("Method 2");
         Alt_Pairs(arr);
-
     }
 }
