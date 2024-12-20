@@ -18,11 +18,12 @@ public class MaxSubArrays {
             }
             System.out.println(); // next line
         }
+//        int totalNumOfSubArrays = (arr.length*(arr.length + 1) )/ 2;
         System.out.println("Total Sub Arrays: " + totalSubArrays);
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,7,8,9};
+        int[] arr = {1,2,3,4,5};
 
         Sub_Arrays(arr);
     }
