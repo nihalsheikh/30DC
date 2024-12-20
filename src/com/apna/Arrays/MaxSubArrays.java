@@ -12,6 +12,8 @@ public class MaxSubArrays {
 
                 for(int k=startElement; k<=endElement; k++) {
                     System.out.print(arr[k] + " "); // printing sub_arrays
+//                    int sumSubArrays = 0;
+//                    System.out.print("sum of subarray = "+ (sumSubArrays+arr[k]) );
                 }
                 totalSubArrays++;
                 System.out.println(); // print the next sub_array
@@ -23,7 +25,7 @@ public class MaxSubArrays {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,2,3,4,5,6};
 
         Sub_Arrays(arr);
     }
