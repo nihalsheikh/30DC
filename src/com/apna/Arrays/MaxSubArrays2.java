@@ -7,14 +7,24 @@ public class MaxSubArrays2 {
        **************************************************
     */
 
-    public static void TotalSubArrays(int[] arr) {}
+    public static void PrefixArrays(int[] arr) {
+        int currentElement = 0; // store the sum of subarray
+        int[] arr2 = new int[arr.length]; // store the sum of sub-array elemnt here increasing order of elements in sub-arrays
 
-    public static void SumOfSubArrays(int[] arr) {}
+        for(int i=0; i<arr.length; i++) {
+            arr2[i] = currentElement + arr[i];
+            currentElement = arr2[i];
+        }
+
+        System.out.println("Sum of Sub arrays is: ");
+        for(int i=0; i<arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
+        }
+    }
 
     public static void main(String[] args) {
         int[] arr = {-1,2,4,6,8};
 
-        TotalSubArrays(arr);
-//        SumOfSubArrays(arr);
+        PrefixArrays(arr);
     }
 }
