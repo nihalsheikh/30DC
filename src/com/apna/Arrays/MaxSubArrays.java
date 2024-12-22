@@ -1,6 +1,12 @@
 package com.apna.Arrays;
 
 public class MaxSubArrays {
+    /*
+       **************************************************
+                        BRUTE FORCE METHOD
+       **************************************************
+    */
+
     public static void Sub_Arrays(int[] arr) {
         int totalSubArrays = 0; // formula for counting total subArrays: (n*(n+1))/2
         System.out.println("*************** Sub arrays start here ***************");
