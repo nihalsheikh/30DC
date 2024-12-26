@@ -42,6 +42,6 @@ public class MaxSubArrays2 {
         int[] arr = {-2, -1, 4, 3, 7};
 
 //        PrefixArraysSum(arr);
-        Kadanes(arr);
+        Kadanes(arr); // better way than Prefix, & this is the best solution
     }
 }
