@@ -2,7 +2,7 @@ package com.apna.Arrays;
 
 public class TrappingRainwater {
     public static void Rainwater(int[] arr) {
-        // Trapping Rainwater logic
+        // Trapping Rainwater logicss
     }
 
     public static void main(String[] args) {
