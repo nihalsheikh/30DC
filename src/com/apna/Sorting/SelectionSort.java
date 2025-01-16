@@ -5,7 +5,7 @@ public class SelectionSort {
         for(int turn=0; turn<arr.length-1; turn++) {
             int minPos = turn; // assuming turn is the minimum element position
 
-            for(int j=turn+1; j<arr.length; j++) {
+            for(int j=turn+1; j<arr.length; j++) { // imp: not arr.length-1
                 if(arr[minPos] > arr[j]) {
                     minPos = j;
                 }
