@@ -1,8 +1,8 @@
 package com.apna.Sorting;
 
-public class BasicSorting {
-    public static void BubbleSort(int[] arr) {
-        // basic sorting: ascending
+public class BubbleSort {
+    public static void Sorting(int[] arr) {
+        // Bubble Sort
         for(int turn=0; turn<arr.length-1; turn++) {
             for(int j=0; j<arr.length-1-turn; j++) {
                 if(arr[j] > arr[j+1]) {
@@ -13,16 +13,16 @@ public class BasicSorting {
             }
         }
 
-
         for(int i=0; i<arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
         // Basic sorting
-        int[] arr = {5,4,1,3,2};
+        int[] arr = {1,2,6,3,5,4};
 
-        BubbleSort(arr);
+        Sorting(arr);
     }
 }
