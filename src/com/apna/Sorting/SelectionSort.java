@@ -2,6 +2,7 @@ package com.apna.Sorting;
 
 public class SelectionSort {
     public static void Selection(int[] arr) {
+        // Selection sort
         for(int turn=0; turn<arr.length-1; turn++) {
             int minPos = turn; // assuming turn is the minimum element position
 

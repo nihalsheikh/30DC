@@ -1,10 +1,10 @@
 package com.apna.Sorting.PracticeQuestion;
 
 public class SortingQuestion {
-    public static void Bubble(int[] arr) { // Bubble Sort
-        for(int turn=0; turn<arr.length-1; turn++) { //  loop for number of turns to sort
-            for(int j=0; j<arr.length-1; j++) {
-                if(arr[j] > arr[j+1]) { // comparing elements
+    public static void Bubble(int[] arr) {
+        for(int i=0; i<arr.length; i++) {
+            for(int j=0; j<arr.length-1-i; j++) {
+                if(arr[j] > arr[j+1]) {
                     int temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
@@ -15,37 +15,57 @@ public class SortingQuestion {
         for(int i=0; i<arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-        System.out.println(" ");
     }
 
-    public static void Selection(int[] arr) { // Selection Sort
-        System.out.println();
+    // Selection Sort
+    public static void Selection(int[] arr) {
+        for(int i=0; i<arr.length-1; i++) {
+            int minPos = i;
+
+            for(int j=i+1; j<arr.length; j++) {
+                if(arr[minPos] > arr[j]) {
+                    minPos = j;
+                }
+            }
+
+            int temp = arr[minPos];
+            arr[minPos] = arr[i];
+            arr[i] = temp;
+        }
+
+        for(int i=0; i<arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 
-    public static void Insertion(int[] arr) { // Insertion Sort
-        System.out.println();
-    }
+    // Insertion Sort
+    public static void Insertion(int[] arr) {
+        for(int i=1; i<arr.length; i++) {
+            int curr = arr[i];
+            int prev = i-1;
 
-    public static void Counting(int[] arr) { // Counting Sort
-        System.out.println();
+            while(prev >=0 && arr[prev] > curr) {
+                arr[prev+1] = prev;
+                prev--;
+            }
+
+            arr[prev+1] = curr;
+        }
     }
 
     public static void main(String[] args) {
         int[] arr = {3,6,2,1,8,7,4,5,3,1};
 
-        System.out.println("Bubble Sort method used");
+        // Bubble Sort
+        System.out.println("Bubble Sort called");
         Bubble(arr);
 
-//        System.out.println();
-//        System.out.println("Selection Sort method used");
-//        Selection(arr);
-//
-//        System.out.println();
-//        System.out.println("Insertion Sort method used");
-//        Insertion(arr);
-//
-//        System.out.println();
-//        System.out.println("Counting Sort method used");
-//        Counting(arr);
+        // Selection Sort
+        System.out.println("\nSelection Sort called");
+        Selection(arr);
+
+        // Insertion Sort
+        System.out.println("\nInsertion Sort called");
+        Insertion(arr);
     }
 }

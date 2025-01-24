@@ -2,7 +2,7 @@ package com.apna.Sorting;
 
 public class InsertionSort {
     public static void Insertion(int[] arr) {
-        // Time Complexity: O(n^2)
+        // Insertion Sort
         for(int i=1; i<arr.length; i++) {
             int curr = arr[i];
             int prev = i-1;
